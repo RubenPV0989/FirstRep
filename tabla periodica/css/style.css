@@ -1,0 +1,57 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+table{
+    width: 100%
+}
+td{
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+}
+td:hover{
+    color: black;
+}
+.esconder{
+    background-color: white;
+}
+
+.gases_nobles{
+    background-color: green;
+}
+.halogenos{
+    background-color: greenyellow;
+}
+.no_metales{
+    background-color: orange;
+}
+.metaloides{
+    background-color: red;
+}
+.otros_metales{
+    background-color: purple;
+}
+.metales_transicion{
+    background-color: lightblue;
+}
+.alcalinoterreos{
+    background-color: darkgoldenrod;
+}
+.metales_alcalinos{
+    background-color: darkblue;
+}
+.lantanidos{
+    background-color: gray;
+}
+.actinidos{
+    background-color: brown;
+}
+#elem_img{
+    display: block;
+    width: 30%;
+    max-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}

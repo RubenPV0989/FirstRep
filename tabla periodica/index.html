@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/lib.js"></script>
+        <title>Tabla Periodica: Sofia Perez</title>
+    </head>
+    <body>
+        <header>
+            <h1>La Tabla Periodica</h1>
+            <h3>Sofia Perez Palacios - 3A</h3>
+            <h2>Introduccion</h2>
+            <p>Bienvenido a esta maqueta sobre la tabla periódica, en la cual puedes ver información de cada uno de los elementos químicos y entenderlos mejor.</p>
+        </header>
+        <section>
+            <table id="tperiodica">
+                <tr><td class="no_metales">H</td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="gases_nobles">He</td></tr>
+                <tr><td class="metales_alcalinos">Li</td><td class="alcalinoterreos">Be</td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="metaloides">B</td><td class="no_metales">C</td><td class="no_metales">N</td><td class="no_metales">O</td><td class="halogenos">F</td><td class="gases_nobles">Ne</td></tr>
+                <tr><td class="metales_alcalinos">Na</td><td class="alcalinoterreos">Mg</td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="esconder"></td><td class="otros_metales">Al</td><td class="metaloides">Si</td><td class="no_metales">P</td><td class="no_metales">S</td><td class="halogenos">Cl</td><td class="gases_nobles">Ar</td></tr>
+                <tr><td class="metales_alcalinos">k</td><td class="alcalinoterreos">Ca</td><td class="metales_transicion">Sc</td><td class="metales_transicion">Ti</td><td class="metales_transicion">V</td><td class="metales_transicion">Cr</td><td class="metales_transicion">Mn</td><td class="metales_transicion">Fe</td><td class="metales_transicion">Co</td><td class="metales_transicion">Ni</td><td class="metales_transicion">Cu</td><td class="metales_transicion">Zn</td><td class="otros_metales">Ga</td><td class="metaloides">Ge</td><td class="metaloides">As</td><td class="no_metales">Se</td><td class="halogenos">Br</td><td class="gases_nobles">Kr</td></tr>
+                <tr><td class="metales_alcalinos">Rb</td><td class="alcalinoterreos">Sr</td><td class="metales_transicion">Y</td><td class="metales_transicion">Zr</td><td class="metales_transicion">Nb</td><td class="metales_transicion">Mo</td><td class="metales_transicion">Tc</td><td class="metales_transicion">Ru</td><td class="metales_transicion">Rh</td><td class="metales_transicion">Pd</td><td class="metales_transicion">Ag</td><td class="metales_transicion">Cd</td><td class="otros_metales">In</td><td class="otros_metales">Sn</td><td class="metaloides">Sb</td><td class="metaloides">Te</td><td class="halogenos">I</td><td class="gases_nobles">Xe</td></tr>
+                <tr><td class="metales_alcalinos">Cs</td><td class="alcalinoterreos">Ba</td><td class="metales_transicion">Lu</td><td class="metales_transicion">Hf</td><td class="metales_transicion">Ta</td><td class="metales_transicion">W</td><td class="metales_transicion">Re</td><td class="metales_transicion">Os</td><td class="metales_transicion">Ir</td><td class="metales_transicion">Pt</td><td class="metales_transicion">Au</td><td class="metales_transicion">Hg</td><td class="otros_metales">Tl</td><td class="otros_metales">Pb</td><td class="otros_metales">Bi</td><td class="metaloides">Po</td><td class="halogenos">At</td><td class="gases_nobles">Rn</td></tr>
+                <tr><td class="metales_alcalinos">Fr</td><td class="alcalinoterreos">Ra</td><td class="metales_transicion">Lr</td><td class="metales_transicion">Rf</td><td class="metales_transicion">Db</td><td class="metales_transicion">Sg</td><td class="metales_transicion">Bh</td><td class="metales_transicion">Hs</td><td class="metales_transicion">Mt</td><td class="metales_transicion">Ds</td><td class="metales_transicion">Rg</td><td class="metales_transicion">Cn</td><td class="otros_metales">Nh</td><td class="otros_metales">Fl</td><td class="otros_metales">Mc</td><td class="otros_metales">Lv</td><td class="halogenos">Ts</td><td class="gases_nobles">Og</td></tr>
+            </table>
+        </section>
+        <Section>
+            <p id="na">Numero atomico: </p>
+            <p id="sb">simbolo: </p>
+            <p id="desc">descripcion: </p>
+            <p>mas infomacion: <a id="enlace">aqui</a></p>
+            <img id="elem_img">
+        </Section>
+    </body>
+    <script type="text/javascript">
+        elementos_pro = {
+            'H': {'n_atom': '1','desc':'Él hidrógeno es el elemento químico más ligero de la tabla periódica, sin embargo es el elemento mas abundante. Se suele presentar en forma de gas (diatómico H2) el c ual normalmente es inflamable, incoloro, inodoro, no metálico e insoluble en agua.', 'link':'https://es.wikipedia.org/wiki/Hidr%C3%B3geno','img':'img/H.png'},
+            'He': {'n_atom': '2','desc':'El helio es un gas que presenta características de un gas noble(no reacciona generalmente, ya que hay excepciones) por lo que es un gas monoatómico incoloro e inodoro que cuenta con el menor punto de ebullición de todos los elementos químicos.', 'link':'https://es.wikipedia.org/wiki/Helio', 'img':'img/He.jpg'},
+            'Li': {'n_atom': '3','desc':'El litio se encuentra en el grupo de elementos alcalinos, en su forma pura es un metal blando que se oxida rápidamente en el agua o aire, también es el elemento sólido mas ligero.', 'link':'https://es.wikipedia.org/wiki/Litio', 'img':'img/Li.jpg'},
+            'Be': {'n_atom': '4','desc':'El berilio es un metal quebradizo y tóxico, por el otro lado también es un elemento alcalinotérreo bivalente, el cual se le usa como endurecedor por ejemplo en el cobre.', 'link':'https://es.m.wikipedia.org/wiki/Berilio', 'img':'img/Be.jpg'},
+            'B': {'n_atom': '5','desc':'El boro entra en el grupo de metaloides y es un semiconductor. El boro tiene dos alótropos(propiedad química que comparten diferentes estructuras); esta el boro amorfo (polvo marrón) y el boro metálico (metal negro, resistenete y mal conductor).', 'link':'https://es.m.wikipedia.org/wiki/Boro', 'img':'img/B.jpg'},
+            'C': {'n_atom': '6','desc':'El carbono entra en el grupo de los no-metales y es el pilar básico de la química órganica, esto junto que se han sintetizado muchas nuevas estructuras basadas en el carbono lo convierte en un elemento destacado/importante.', 'link':'https://es.m.wikipedia.org/wiki/Carbono','img':'img/C.jpg'},
+            'N': {'n_atom': '7','desc':'El nitrógeno es un gas diatómico que constituye parte abundante del aire atmosférico, es un elemento común en el universo y esta presente en todos los organismos.', 'link': 'https://es.m.wikipedia.org/wiki/Nitr%C3%B3geno','img':'img/N.png'},
+            'O': {'n_atom': '8','desc':'El oxígeno es un gas que forma parte de los anfígenos(se le dice familia del oxígeno pero se refiere a la propiedad de algunos de sus elementos de formar compuestos con carácter ácido o básico)y calcogénos(elementos no metálicos). Es un elemento igual bastante reactivo que forma fácilmente compuestos,es un agente oxidante y tiene la segunda electronegatividad más alta de todos los elementos.','link':'https://es.m.wikipedia.org/wiki/Ox%C3%ADgeno','img':'img/O.jpg'},
+            'F': {'n_atom': '9','desc':'El flúor es un gas y elemento que entra en el grupo de los halogénos(los elementos químicos que forman el grupo 17) destaca en ser el más electronegativo y reactivo de todos los elementos, volviéndose altamente peligroso en su forma pura al causar graves quemaduras en la piel.','link':'https://es.m.wikipedia.org/wiki/Fl%C3%BAor','img':'img/F.jpg'},
+            'Ne': {'n_atom': '10','desc':'El neón es un gas noble(por lo que es inerte y incoloro)el cual es bastante abundante en el universo, es el que le da un color rojizo a las lámparas fluorescentes en las que lo emplean', 'link':'https://es.m.wikipedia.org/wiki/Ne%C3%B3n','img':'img/Ne.jpg'},
+            'Na': {'n_atom': '11','desc':'El sodio es un metal y elemento que entra en el grupo de alcalinos, el cual es muy reactivo y abundante, sin embargo reacciona violentamente con el agua y se oxida en presencia del oxígeno. Es esencial para la vida ya que tambien es un componente de muchos minerales, para todos los animales y algunas planfas, etc','link':'https://es.m.wikipedia.org/wiki/Sodio','img':'img/Na.jpg'},
+            'Mg': {'n_atom': '12','desc':'El Magnesio es un metal y elemento que entra en el grupo de alcalinos, el cual es muy abundante( el octavo elemento mas abundante e7n la corteza y el tercer elemento en mar).El ion de magnesio es esencial para la vida ya que está presente en todas las células de todos los organismos y la principal forma de energía debe estar enlazado a magnesio para estar activo biológicamente, también el magnesio juega un papel importante en la estabilidad de todos los compuestos polifosfatados(mineral esencial en el cuerpo humano referente sobre todo a la sangre.','link':'https://es.m.wikipedia.org/wiki/Magnesio','img':'img/Mg.jpg'},
+            'Al': {'n_atom': '13','desc':'El aluminio es un metal no ferromagnético el cual es común en la corteza terrestre, es un buen conductor de calor y electricidad por ello y otras cosas es el metal que más se utiliza despues del acero.','link':'https://es.m.wikipedia.org/wiki/Aluminio','img':'img/Al.png'},
+            'Si': {'n_atom': '14','desc':'El silicio es un elemento que entra en los metaloides, se presenta en forma mas cristalizada, tiene un brillo metálico y un color mas oscuro, también es el segundo elemento más abundante en la corteza terrestre.','link':'https://es.m.wikipedia.org/wiki/Silicio','img':'img/Si.jpg'},
+            'P': {'n_atom': '15','desc':'El fosfóro es un elemento que entra en no metales, se encuentra en la naturaleza y en seres vivos, por ejemplo en el cuerpo del ser humano su principal función es la formación de huesos y dientes. Una característica del fosfóro es que es muy reactivo y se oxida con el oxígeno','link':'https://es.m.wikipedia.org/wiki/F%C3%B3sforo','img':'img/P.jpg'},
+            'S': {'n_atom': '16','desc':'El azufre forma parte de los no metales, la forma que presenta es mas cristalizada, caracterizada por un abundante color amarillo. Se usa principalmente como fertilizante, pero también en la fabricación de pólvora','link':'https://es.m.wikipedia.org/wiki/Azufre','img':'img/S.jpg'},
+            'Cl': {'n_atom': '17','desc':'El cloro es un gas tóxico, el cual es abundante en la naturaleza y esencial para muchas formas de vida, también es un elemento que entra en el grupo de los halógenos(elementos químicos que forman el grupo 17)','link':'https://es.m.wikipedia.org/wiki/Cloro','img':'img/Cl.jpg'},
+            'Ar': {'n_atom': '18','desc':'El argón es un gas noble, constituye el 0,934 % del aire seco(aire que no contiene agua en forma alguna) aunque lo que lo caracteriza es su uso en las industrias como la fabricación de acero, la soldadura y la fabricación de metales, la electrónica, la conservación de alimentos, etc referente a la conservación','link':'https://es.m.wikipedia.org/wiki/Arg%C3%B3n','img':'img/Ar.png'}
+        }
+        const tbody = document.querySelector("#tperiodica");
+        tbody.addEventListener('click', function (e) {
+        const cell = e.target.closest('td');
+        if (!cell) {return;} // Quit, not clicked on a cell
+        //console.log(cell.innerHTML, row.rowIndex, cell.cellIndex);
+        document.querySelector("#na").innerHTML = "Numero atomico: "+elementos_pro[cell.innerHTML]['n_atom'];
+        document.querySelector("#sb").innerHTML = "simbolo: "+cell.innerHTML;
+        document.querySelector("#desc").innerHTML = "descripcion: "+elementos_pro[cell.innerHTML]['desc'];
+        document.querySelector("#enlace").setAttribute("href",elementos_pro[cell.innerHTML]['link']) 
+        document.querySelector("#elem_img").setAttribute("src",elementos_pro[cell.innerHTML]['img']) 
+        });
+        </script>
+    
+</html>
